@@ -36,28 +36,35 @@ function findLongestWord(words) {
   }
 }
 
-/* let longestWord = 0;
-  for (let i = 0; i < words.length; i++) {
-    longestWord = words[i];
-    }
-return longestWord*/
-
 // Iteration 3 | Sum Numbers
 const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 
 function sumNumbers(numbers) {
-  let sumNum = 0;
-  for (let i = 0; i < numbers.length; i++) {
-    sumNum += numbers[i];
+  if (numbers.length === 0) {
+    return 0;
+  } else {
+    let sumNum = 0;
+    for (let i = 0; i < numbers.length; i++) {
+      sumNum += numbers[i];
+    }
+    return sumNum;
   }
-  return sumNum
 }
-
 
 // Iteration 4 | Numbers Average
 const numbers2 = [2, 6, 9, 10, 7, 4, 1, 9];
 
-function averageNumbers() {}
+function averageNumbers(numbers2) {
+    if (numbers2.length === 0) {
+    return 0;
+  } else {
+     let numElements = numbers2.length;
+  let avgNumbers = sumNumbers(numbers2) / numElements;
+
+  return avgNumbers; 
+  }
+}
+ 
 
 // Iteration 5 | Find Elements
 const words2 = [
